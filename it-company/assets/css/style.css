@@ -400,6 +400,36 @@ ul.navbar-nav.sidebar {
 .search-icon a {
   font-size: 16px;
 }
+@media  only screen and  (min-width: 991px) 
+{
+  ul.navbar-nav.mega-dropdown > li > ul.dropdown-menu {
+    width: 372px;
+    left: -83px;
+    column-count: 2;
+    gap: 10px;
+}
+
+ul.navbar-nav.mega-dropdown > li > ul.dropdown-menu > li > ul.dropdown-menu {
+    display: block;
+    width: 100%;
+    box-shadow: none;
+    position: inherit;
+}
+
+ul.navbar-nav.mega-dropdown > li > ul.dropdown-menu > li > ul.dropdown-menu > li > a {font-size: 12px;padding: 3px 15px 3px 40px;line-height: 18px;}
+
+ul.navbar-nav.mega-dropdown > li > ul.dropdown-menu > li > ul.dropdown-menu > li > a::before {
+    top: 9px;
+    left: 22px;
+}
+
+ul.navbar-nav.mega-dropdown > li > ul.dropdown-menu > li {
+  display: inline-block;
+  margin-bottom: 4px;
+}
+  
+}
+
 /* sidebar  */
 .contact-box .social-media li a {
 background: var(--highlight-color);
@@ -691,7 +721,7 @@ section.white-clr-text h2.main-title, section.white-clr-text h2.main-title + p {
   margin-bottom: 8px;
 }
 .fr-card{
-  border: 1px solid var(--rt-gray60);
+  border: 1px solid #e7e7e7;
   border-radius: 20px;
   padding: 36px 25px 29px 36px;
   background-color: #fff;
@@ -1293,3 +1323,106 @@ margin-bottom: 20px;
 }
 
 /* footer end */
+/* services page  */
+.inner-banner-sec{
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  justify-content: center;
+  min-height: 360px;
+}
+.inner-banner-sec .banner-img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.inner-banner-sec .banner-img img{
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+.custom-bread-crumb .breadcrumb-item+.breadcrumb-item::before {
+  content: "\f105";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+}
+
+.custom-bread-crumb ol.breadcrumb {
+  margin: 15px 0;
+}
+
+.custom-bread-crumb .breadcrumb-item+.breadcrumb-item {
+  padding-left: 10px;
+}
+
+.custom-bread-crumb .breadcrumb li.breadcrumb-item {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  transition: all 0.3s;
+}
+
+.custom-bread-crumb .breadcrumb li.breadcrumb-item.active, .custom-bread-crumb .breadcrumb li.breadcrumb-item:hover {
+  color: var(--highlight-color);
+}
+.custom-bread-crumb .breadcrumb li.breadcrumb-item:first-child::before{
+  content: "\f015";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  display: inline-block;
+  padding-right: 10px;
+}
+/* service page sec  */
+.ser-page-sec{
+  background: #fff;
+  padding-bottom: 100px;
+}
+.ser-page-sec .bg-shape {
+  position: absolute;
+  bottom: 0;
+  left: 0;z-index: 2;
+}
+.ser-page-sec .container{
+  position: relative;
+  z-index: 2;
+}
+.ser-page-sec .fr-card:hover{
+  box-shadow: 8px 8px 36px rgba(0, 0, 0, 8%);
+  border-color: transparent;
+}
+/* contact sect */
+.ser-contact{
+  background: var(--clr-bg-one);
+}
+.ser-contact .contact-left-box {
+  max-width: 433px;
+}
+
+.ser-contact h2.main-title {
+  padding-bottom: 16px;
+}
+.service-sec .services-top-box h2.main-title span{
+  background: linear-gradient(269.37deg,#FC0000 5.03%,#EB8A17 56.67%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.ser-page-sec .services-top-box {
+  max-width: 800px;
+}
+.feature-box .top-sub-title {
+  font-weight: 400;
+  margin-bottom: 2px;
+}
+
+.ser-contact .f-item .icon {
+  font-size: 21px;
+}
+/*  */
+/* ./services page  */
