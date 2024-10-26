@@ -1426,3 +1426,215 @@ margin-bottom: 20px;
 }
 /*  */
 /* ./services page  */
+/* service details page  */
+.widget {
+  width: 100%;
+  max-width: 100%;
+  background-color: #eff3f3;
+  border-radius: 12px;
+  padding: 35px 30px 40px;
+}
+
+.left-wrapper > .widget:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+h3.widget-title {
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 600;
+  border-bottom: 1px solid var(--rt-gray60);
+  display: inline-block;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.search-box input.form-control {
+  height: 50px;
+  padding: 0 15px;
+  border: none;
+  width: 100%;
+  background: #fff;
+  color: #696969;
+  transition: all 320ms ease-in-out;
+}
+
+.search-box {
+  position: relative;
+  overflow: hidden;
+  background-color: #fff;
+  border-radius: 50px;
+}
+
+.search-box > .serch-icon {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  border: none;
+  color: #fff;
+  padding: 0 12px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--highlight-color);
+  cursor: pointer;
+  box-shadow: 4px 4px 16px #00c07c6e;
+  transition: all 320ms ease-in-out;
+}
+ul.cat-box > li:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.cat-box >li > a.cat-item {
+  position: relative;
+  padding: 20px 40px 20px 30px;
+  background-color: #fff;
+  border-radius: 8px;
+  color: var(--rt-title-color);
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  overflow: hidden;
+  z-index: 1;
+  display: block;
+  transition: all 320ms ease-in-out;
+}
+
+.cat-box >li > a.cat-item:hover {
+  color: #fff;
+}
+
+.cat-box >li > a.cat-item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: var(--highlight-color);
+  width: 0;
+  height: 100%;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 320ms ease-in-out;
+  z-index: -1;
+}
+
+.cat-box >li > a.cat-item:hover:before {
+  width: 100%;
+  visibility: visible;
+  opacity: 1;
+}
+
+.cat-box >li > a.cat-item::after {
+  content: "\f178";
+  position: absolute;
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  right: 20px;
+  top: 20px;
+  color: #e7e7e7;
+  transform: rotate(-45deg);
+  transition: all 320ms ease-in-out;
+}
+
+.cat-box >li > a.cat-item:hover:after {
+  transform: rotate(0);
+  color: #fff;
+}
+.post-items{
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  position: relative;
+}
+.post-items figure{
+  max-width: 80px;
+  display: inline-block;
+  margin-bottom: 0;
+  overflow: hidden;
+  height: 80px;
+  border-radius: 50%;
+}
+.post-items h4{
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 26px;
+  transition: all 0.3s;
+}
+.post-items:hover h4{
+  color: var(--highlight-color);
+}
+.post-items figure img{
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.3s;
+}
+.post-items:hover figure img{
+  transform: scale(1.2);
+}
+.r-post-wrapper > .post-items:not(:last-child){
+  margin-bottom: 20px;
+}
+.b-card-box{
+  background: #F9F9F9;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.blog-details-box .details-img img{
+  width: 100%;
+  border-radius: 12px;
+}
+.blog-details-box .details-img {
+  margin-bottom: 35px;
+  overflow: hidden;
+}
+.blog-details-box .main-title, 
+.faq-box .main-title {
+  border-bottom: 1px solid #e7e7e7;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+.blog-details-box  p{
+  color: #7a7a7a;
+  margin-bottom: 20px;
+}
+.fr-card.blog-center {
+  align-items: center;
+  border: none;
+  box-shadow: 8px 8px 32px 0px rgba(0, 0, 0, 0.08);
+}
+.fr-card.blog-center-one{
+  align-items: center;
+  padding: 40px 15px;
+}
+
+.fr-card.blog-center .ft-content, .fr-card.blog-center .ft-content p , .fr-card.blog-center-one .ft-content, .fr-card.blog-center-one p{
+  text-align: center;
+}
+
+.blog-center .icon-box {
+  border-radius: 50%;
+  box-shadow: 8px 8px 16px 0px rgba(0, 192, 123.99999999999994, 0.18);
+}
+.blog-center:hover .icon-box i,  .fr-card.blog-center-one:hover .icon-box  i{
+  animation: .7s zoomIn forwards;
+}
+.fr-card.blog-center-one h3 {
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.fr-card.blog-center-one .icon-box {
+  background: transparent;
+  color: var(--highlight-color);
+  font-size: 54px;
+  /* animation: .7s zoomIn forwards; */
+
+}
+.main-sec .faq-box{
+  margin: 50px 0 20;
+}
+/* ./service details page */
