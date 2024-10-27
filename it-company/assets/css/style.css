@@ -1433,6 +1433,8 @@ margin-bottom: 20px;
   background-color: #eff3f3;
   border-radius: 12px;
   padding: 35px 30px 40px;
+  position: relative;
+  overflow: hidden;
 }
 
 .left-wrapper > .widget:not(:last-child) {
@@ -1635,6 +1637,216 @@ ul.cat-box > li:not(:last-child) {
 
 }
 .main-sec .faq-box{
-  margin: 50px 0 20;
+  margin: 40px 0 20px;
 }
+
+/* accordion  */
+.faq-box .accordion-item button.accordion-button {
+  padding: 25px 30px 20px 30px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #696969;
+  box-shadow: none;
+  border: none;
+}
+
+.faq-box .accordion-item .accordion-button:not(.collapsed) {
+  color: var(--highlight-color);
+  background-color: var(--clr-bg-one);
+}
+
+.faq-box .accordion >.accordion-item {
+  border: 1px solid #e7e7e7;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.faq-box .accordion >.accordion-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.faq-box .accordion-item .accordion-body {
+  padding: 0px 30px 30px 30px;
+  background: var(--clr-bg-one);
+}
+
+.faq-box .accordion-button::after, .accordion-button:not(.collapsed)::after {
+  background: none;
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  content: "\2b";
+}
+
+.faq-box .accordion-button:not(.collapsed)::after {
+  content: "\f068";
+  transform: none;
+}
+/* ./accordion */
+
+.cta-contact  { 
+  display: block;
+
+  font-size: 20px;
+  line-height: 30px;
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: .05em;
+  border: 1px solid #5a5999;
+  border-radius: 50px;
+  padding: 5px 15px 5px 5px;
+  transition: all 0.3s;
+}
+.cta-contact:hover{
+  color: var(--highlight-color);
+}
+
+.cta-contact  .icon{ 
+  display: inline-flex;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--highlight-color);
+  margin-right: 4px;
+  overflow: hidden;
+}
+.cta-contact .icon i{
+  color: #fff;
+    font-size: 18px;
+}
+.cta-contact:hover .icon i{
+  animation: bottomtotop .4s forwards;
+} 
+
+@keyframes bottomtotop {
+  49% {
+      transform: translateY(-100%)
+  }
+
+  50% {
+      opacity: 0;
+      transform: translateY(100%)
+  }
+
+  51% {
+      opacity: 1
+  }
+}
+
+.widget
+.cta-img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.cta-img img{
+  width: 100%;
+height: 100%;
+object-fit: cover;
+}
+.widget .cta-content {
+  position: relative;
+  width: 100%;
+  height: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: end;
+  /* border: 1px solid red; */
+}
+.widget .cta-content .widget-title{
+  color: #fff;
+}
+.main-sec .left-wrapper{
+  align-self: flex-start;
+  position: sticky;
+  top: 150px;
+}
+
 /* ./service details page */
+/* blog page */
+.fr-card.blog-card {
+  padding: 0;
+  border: none;
+}
+.fr-card.blog-card .img-box{
+  overflow: hidden;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+.fr-card.blog-card .img-box img{
+transition: all  0.3s ease-in-out;
+width: 100%;
+object-fit: cover;
+}
+.fr-card.blog-card:hover .img-box img{
+  transform: scale(1.2);
+}
+.fr-card.blog-card .card-tags{
+  font-style: normal;
+    font-weight: 500;
+    background: 0 0;
+    border: 1px solid var(--highlight-color);
+    font-size: 14px;
+    min-height: 30px;
+    padding: 3px 13px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    color: var(--highlight-color);
+    transition: all 0.3s;
+    border-radius: 4px;
+}
+.fr-card.blog-card .card-tags:hover{
+  color: #fff;
+  background: var(--highlight-color);
+}
+.fr-card.blog-card  h3{
+margin-top: 10px;
+transition: all 0.3s;
+}
+.fr-card.blog-card:hover  h3{
+  color: var(--highlight-color);
+}
+/* ./blog card page */
+.custom-pagination{
+  position: relative;
+  z-index: 2;
+  margin-top: 30px;
+}
+.custom-pagination .pagination-list{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.custom-pagination .pagination-list li{
+  margin-right: 12px;
+  line-height: 26px;
+  transition: all 320ms ease-in-out;
+}
+.custom-pagination .pagination-list li a{
+  color: grey;
+    border: 1px solid #e7eaf0;
+    width: 42px;
+    height: 42px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 17px;
+}
+.custom-pagination .pagination-list li:hover a, .custom-pagination .pagination-list li.active a{
+  background: var(--highlight-color);
+  box-shadow: 4px 4px 16px rgba(0, 192, 124, .25);
+  border-color: transparent;
+  color: #fff;
+}
