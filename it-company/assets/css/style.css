@@ -403,10 +403,11 @@ ul.navbar-nav.sidebar {
 @media  only screen and  (min-width: 991px) 
 {
   ul.navbar-nav.mega-dropdown > li > ul.dropdown-menu {
-    width: 372px;
-    left: -83px;
-    column-count: 2;
+    width: 614px;
+    left: -106px;
+    column-count: 3;
     gap: 10px;
+    padding: 10px 0;
 }
 
 ul.navbar-nav.mega-dropdown > li > ul.dropdown-menu > li > ul.dropdown-menu {
@@ -414,9 +415,13 @@ ul.navbar-nav.mega-dropdown > li > ul.dropdown-menu > li > ul.dropdown-menu {
     width: 100%;
     box-shadow: none;
     position: inherit;
+    margin-top: -7px;
 }
 
-ul.navbar-nav.mega-dropdown > li > ul.dropdown-menu > li > ul.dropdown-menu > li > a {font-size: 12px;padding: 3px 15px 3px 40px;line-height: 18px;}
+ul.navbar-nav.mega-dropdown > li > ul.dropdown-menu > li > ul.dropdown-menu > li > a {        font-size: 12px;
+  padding: 3px 15px 3px 33px;
+  line-height: 15px;
+  font-weight: 400;}
 
 ul.navbar-nav.mega-dropdown > li > ul.dropdown-menu > li > ul.dropdown-menu > li > a::before {
     top: 9px;
